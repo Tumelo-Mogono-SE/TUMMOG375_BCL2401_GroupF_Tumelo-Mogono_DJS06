@@ -35,7 +35,11 @@ const namesAndProvinces =(names, provinces) => {
 namesAndProvinces(names, provinces);
 
 //Exercise 2
+const upperCaseProvinces = (provinces) => {
+  console.log(provinces.map(province => province.toUpperCase()));
+}
 
+upperCaseProvinces(provinces);
 //Exercise 3
 
 //Exercise 4
