@@ -41,7 +41,14 @@ const upperCaseProvinces = (provinces) => {
 }
 
 upperCaseProvinces(provinces);
+
 //Exercise 3
+const nameLenghts = (names) => {
+  const newNamesArray =  names.map(name => name.length);
+  console.log(newNamesArray);
+};
+
+nameLenghts(names);
 
 //Exercise 4
 
