@@ -70,5 +70,16 @@ const findLetterInNames = (names) => {
   console.log(containsLetterS)
 }
 
-findLetterInNames(names)
+findLetterInNames(names);
+
 //Exercise 7
+const createObjectfromArrays = (names) => {
+  const newObjectFromArrays = names.reduce((accumulator, currentValue, index) => {
+    accumulator[currentValue] = provinces[index];
+    return accumulator
+  },{});
+
+  console.log(newObjectFromArrays);
+};
+
+createObjectfromArrays(names);
