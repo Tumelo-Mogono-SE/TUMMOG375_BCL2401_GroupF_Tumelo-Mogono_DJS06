@@ -51,7 +51,13 @@ const nameLenghts = (names) => {
 nameLenghts(names);
 
 //Exercise 4
+const sortProvinces = (provinces) => {
+  const newSortedProvinces = provinces.sort();
 
+  console.log(newSortedProvinces);
+};
+
+sortProvinces(provinces);
 //Exercise 5
 
 //Exercise 6
