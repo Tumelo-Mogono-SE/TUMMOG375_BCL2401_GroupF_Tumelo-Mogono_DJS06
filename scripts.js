@@ -59,7 +59,11 @@ const sortProvinces = (provinces) => {
 
 sortProvinces(provinces);
 //Exercise 5
-
+const filteringCape = (provinces) => {
+  const newFilteredProvinces = provinces.filter(province => !province.includes("Cape"));
+  console.log(newFilteredProvinces.length)
+}
+filteringCape(provinces);
 //Exercise 6
 
 //Exercise 7
