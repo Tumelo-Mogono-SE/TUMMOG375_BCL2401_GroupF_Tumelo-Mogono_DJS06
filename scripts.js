@@ -65,5 +65,10 @@ const filteringCape = (provinces) => {
 }
 filteringCape(provinces);
 //Exercise 6
+const findLetterInNames = (names) => {
+  const containsLetterS = names.map(name => name.split('').some(character => character.includes('s') || character.includes('S')));
+  console.log(containsLetterS)
+}
 
+findLetterInNames(names)
 //Exercise 7
