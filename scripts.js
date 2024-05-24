@@ -13,3 +13,35 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+
+//Exercise 1
+
+const namesAndProvinces =(names, provinces) => {
+
+  names.forEach(name =>
+    console.log(name)
+  );
+
+  provinces.forEach(province =>
+    console.log(province)
+  );
+
+  names.forEach((name, index) => {
+    console.log( `${name} (${provinces[index]})`)
+  });
+};
+
+namesAndProvinces(names, provinces);
+
+//Exercise 2
+
+//Exercise 3
+
+//Exercise 4
+
+//Exercise 5
+
+//Exercise 6
+
+//Exercise 7
