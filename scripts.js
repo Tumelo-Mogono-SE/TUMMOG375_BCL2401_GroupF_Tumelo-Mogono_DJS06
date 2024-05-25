@@ -89,7 +89,7 @@ createObjectfromArrays(names);
 /**
  * 
  * @param {Array} products 
- * @returns {Object}
+ * @returns {String}
  */
 const advancedExercises = (products) => {
   //exercise 1:
@@ -126,16 +126,13 @@ const advancedExercises = (products) => {
     return accumulator
   }, []);
 
-  return {
-    logProducts,
-    filteredNameByLength,
-    totalPrice,
-    concatenatedProductNames,
-    highestAndLowestPrice,
-    objectTransformation
-  }
+  return `Log Products: ${logProducts}\n` +
+         `Filtered by Name Length: ${JSON.stringify(filteredNameByLength, null, 2)}\n` +
+         `Total price: ${totalPrice}\n` +
+         `Concatenated Product Names: ${concatenatedProductNames}\n` +
+         `Price Extremes: ${highestAndLowestPrice}\n` +
+         `Object Transformation: ${JSON.stringify(objectTransformation, null, 2)}`;
 
 }
 
 console.log(advancedExercises(products))
-// console.log(products.filter(productName => productName.product.length <= 5))
