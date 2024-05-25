@@ -102,7 +102,7 @@ const advancedExercises = (products) => {
   const totalPrice = products.filter(individualProduct => individualProduct.price !== '' && individualProduct.price !== ' ').reduce((total, individualProduct) => total + Number(individualProduct.price), 0);
 
   //exercise 4:
-  const concatenatedProductNames = products.reduce((accumulator, individualProduct) => accumulator + individualProduct.product);
+  const concatenatedProductNames = products.reduce((accumulator, individualProduct) => accumulator + individualProduct.product,'');
 
   //exercise 5:
   const findExtremesInPrice = () => {
