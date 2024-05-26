@@ -16,7 +16,11 @@ const products = [
 
 
 // Exercise 1
-
+/**
+ * A function which console logs each name from the names array and logs each province from the provinces array and then logs the name with it's corresponding province
+ * @param {Array} names 
+ * @param {Array} provinces 
+ */
 const namesAndProvinces =(names, provinces) => {
 
   names.forEach(name =>
@@ -35,6 +39,11 @@ const namesAndProvinces =(names, provinces) => {
 namesAndProvinces(names, provinces);
 
 //Exercise 2
+/**
+ * A function which returns a new array of provinces in uppercase
+ * @function
+ * @param {Array} provinces 
+ */
 const upperCaseProvinces = (provinces) => {
   const newProvinceArray = provinces.map(province => province.toUpperCase());
   console.log(newProvinceArray);
@@ -43,6 +52,11 @@ const upperCaseProvinces = (provinces) => {
 upperCaseProvinces(provinces);
 
 //Exercise 3
+/**
+ * A function which logs a new array of each name length
+ * @function
+ * @param {Array} names 
+ */
 const nameLenghts = (names) => {
   const newNamesArray =  names.map(name => name.length);
   console.log(newNamesArray);
@@ -51,6 +65,11 @@ const nameLenghts = (names) => {
 nameLenghts(names);
 
 //Exercise 4
+/**
+ * A function which returns an array with the provinces sorted in order
+ * @function
+ * @param {Array} provinces 
+ */
 const sortProvinces = (provinces) => {
   const newSortedProvinces = provinces.sort();
 
@@ -58,13 +77,25 @@ const sortProvinces = (provinces) => {
 };
 
 sortProvinces(provinces);
+
 //Exercise 5
+/**
+ * A function which returns a filtered array which excludes provinces which include Cape in their string and logs the number of provinces in the array
+ * @function
+ * @param {Array} provinces 
+ */
 const filteringCape = (provinces) => {
   const newFilteredProvinces = provinces.filter(province => !province.includes("Cape"));
   console.log(newFilteredProvinces.length)
 }
 filteringCape(provinces);
+
 //Exercise 6
+/**
+ * A function which returns a new array  with boolean values for whether a string contains s whether uppercase or lowercase.
+ * @function
+ * @param {Array} names 
+ */
 const findLetterInNames = (names) => {
   const containsLetterS = names.map(name => name.split('').some(character => character.includes('s') || character.includes('S')));
   console.log(containsLetterS)
@@ -73,6 +104,11 @@ const findLetterInNames = (names) => {
 findLetterInNames(names);
 
 //Exercise 7
+/**
+ * A function which returns a new object with the names as key and province as value.
+ * @function
+ * @param {Array} names 
+ */
 const createObjectfromArrays = (names) => {
   const newObjectFromArrays = names.reduce((accumulator, currentValue, index) => {
     accumulator[currentValue] = provinces[index];
@@ -87,7 +123,7 @@ createObjectfromArrays(names);
 
 ///Advanced Exercises
 /**
- * 
+ * A function which executes all the exercises and returns them as string literals.
  * @param {Array} products 
  * @returns {String}
  */
